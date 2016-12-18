@@ -1,0 +1,14 @@
+nav,footer,a.mailto,#btn_up{display:none;}
+div.main{text-align:center;padding-bottom:20px;margin:0}
+div.main-inside{background-color:white;padding:0;text-align:left;}
+div.matronche{margin-top:-10px;margin-left:20px;font-size:3px;font-family:Arial;width:50px;}
+div.blah{margin-left:150px;}
+img{border:solid #777 1px;-khtml-border-radius:1.2em;-moz-border-radius:1.2em;-webkit-border-radius:1.2em;border-radius:1.2em;}
+td.header{font-weight:bold;}
+aside{float:left;margin:20px;}
+figure{text-align:center;display:table;max-width:30%;margin:10px auto;}
+figcaption{text-align:center;;font-size:0.8em;font-style:italic;}
+.centeredcontent{text-align:center;}
+a{text-decoration:none;color:black;}
+a.externallink:after{content:" [ " attr(href) " ] ";font-size:0.8em;font-weight:normal;}
+table{margin-left:auto;margin-right:auto;text-align:left;font-size:0.7em;}

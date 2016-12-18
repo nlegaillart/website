@@ -1,0 +1,106 @@
+﻿Nicolas LE GAILLART
+
+Résidence François Leroux
+91400 Orsay
+Tel.   09 50 60 60 81
+Port. 06 18 54 07 18
+e-mail: nicolas@legaillart.fr
+
+
+38 ans, né à Auxerre (89)
+Célibataire
+Nationalité française
+
+
+Administrateur Systèmes et Réseaux
+
+
+
+
+Expériences professionnelles
+
+Février 2014 - : Wengo SAS (Groupe Vivendi), Paris (75):
+    - Maintenance des plateformes Wengo, Astrocenter, Devispresto et JuriTravail
+
+Juillet 2011 - Octobre 2013 : FIA-NET (Groupe Crédit Agricole), Paris (75):
+	- Maintenance de la plateforme Kwixo: 20 serveurs Solaris 10 et CentOS, répartis sur deux sites, applicatifs utilisant Java/Apache Tomcat/Sybase/CouchDB/ActiveMQ;
+	- Maintenance de la plateforme “historique” FIA-NET (Sceau de confiance, Certissim): Serveurs Solaris 9 puis Red Hat/VMWare ESXi, répartis sur deux sites, applicatifs utilisant PHP/Apache/Sybase;
+	- Gestion des comptes e-mail et back-office des utilisateurs.
+
+Juillet 2010 - Juin 2011 : Cloudmark Labs, Paris (75):
+	- Installation et gestion de la plateforme de filtrage e-mail Orange/Wanadoo France (60 serveurs sous Linux Red Hat), support 4ème niveau, configuration/maintenance du Monitoring (Nagios/Centreon) et des load-balancers (F5 BigIP);
+	- Installation de la plateforme de filtrage e-mail de laposte.net (10 serveurs sous Linux Red Hat).
+
+Décembre 2007 - Juillet 2010 : Mondadori France Digital, Paris (75):
+	- Réorganisation de l'infrastructure existante;
+		- Gestion d'une plateforme hébergeant divers CMS (eZ-publish, Joomla, SPIP, Movable Type, Wordpress) sous Linux Red Hat;
+	- Changement d'hébergeur et installation d'une nouvelle infrastructure (Linux Gentoo, LDAP, Bind, MySQL, SVN, VMWare Server, Nagios, Munin, load-balancers F5 BigIP).
+
+Octobre 2005 - Novembre 2007: Boonty S.A., Paris (75):
+	- Installation/Maintenance de serveurs (Linux Debian): Mail (QMail, Postfix), Web (Apache),  Bases de données (MySQL), Back-office (bugtracker, wiki, CRM...) et monitoring (Nagios/Munin);
+ 	- Relation avec les équipes techniques et marketing;
+ 	- Gestion du parc utilisateur.
+
+Septembre - Octobre 2005: ND Logistics (groupe Norbert Dentressangle), Melun (77):
+- Conception d'une application de facturation pour intranet (programmation PHP/PostgreSQL/Oracle);
+- Conception de scripts de reporting (programmation PHP/PostgreSQL/Oracle).
+
+Novembre 2000 - Décembre 2004: iFrance S.A. (groupe ACCLD), Dijon (21):
+- Support utilisateur (assistance technique HTML et PHP, gestion des comptes utilisateurs);
+- Surveillance de contenu;
+- Installation et administration système d'un parc de 40 serveurs-lame sous Linux Red Hat et FreeBSD hébergeant environ 350 000 sites web et comptes e-mail (exploitation des comptes utilisateurs, mise à jour des ressources systèmes).
+
+Août 1999 - Septembre 2000: Usine J2T (groupe Thomson Multimédia), Tonnerre (89):
+- Conception d'un automate de test de fin de chaîne en équipe avec un automaticien (Programmation en C de la partie analyse de signal infrarouge);
+- Inventaire du parc informatique et création d'une base de données sous MS Access permettant de le gérer.
+
+Avril - Juin 1999: University College Suffolk, Ipswich, England:
+- Stage en cours de formation: mise en place d'un serveur Linux pour utilisation pédagogique (Installation d'une distribution Mandrake et intégration/partage avec les postes utilisateurs sous Windows NT4).
+
+
+
+Compétences
+
+Systèmes d'exploitation: 
+- Systèmes type Unix : GNU/Linux (Debian, Red Hat, Gentoo, Ubuntu...), FreeBSD, OpenBSD, Oracle Solaris;
+- Systèmes temps réel : Microware OS-9;
+- Systèmes Microsoft : Windows Server (notions).
+Langages de programmation: PHP, Perl, Python, C, Assembleur x86 & 68000, Ada, Visual Basic. 
+Langages de script et de mise en forme: XHTML, CSS, JavaScript, XML/Docbook, XSLT, BASH. 
+Bases de données : MySQL/MariaDB, PostgreSQL, Oracle, SQLite, CouchDB.
+Outils de surveillance et de métrologie : MRTG, Munin, Collectd, Cacti, Zabbix, Nagios, Centreon, Splunk.
+Serveurs: 
+- Web : Apache, Tomcat, Lighttpd, Nginx, IIS, Squid, Varnish;
+- Mail : QMail, Postfix, sendmail, Courier, Dovecot, Amavis, SpamAssassin, clamAV, VadeRetro, MS Exchange; 
+- FTP : vsftpd, pure-ftpd, proftpd;
+- DNS : bind9; 
+- Redondance : keepalived, heartbeat, CARP, F5 BigIP;
+- Versioning : CVS, Subversion, git;
+	- Firewalls : NetFilter/IPTables, Packet Filter;
+	- Virtualisation : VMWare ESX/ESXi, Xen, qemu, VirtualBox, “zones” Solaris, “jails” FreeBSD;
+Divers : NFS, SNMP, DHCP, NIS/LDAP/Active Directory.
+Connaissance des langues: anglais lu, écrit, parlé. Notions d'espagnol.
+
+
+Formation
+
+1999: Obtention du DUT Informatique, option informatique et génie informatique à l'IUT de Dijon (Université de Bourgogne). 
+1995-1996: DEUG B (sciences de la vie) 1ère année. 
+1994-1995: DEUG A (sciences & structure de la matière) 1ère année. 
+1994 : Baccalauréat de série D (Mathématiques & Biologie) obtenu à Avallon (89). 
+
+
+
+Réalisations diverses
+
+Mise en place d'un serveur web/ftp/mail personnel sous FreeBSD; création d'une bibliothèque PHP permettant de développer rapidement des sites web légers.
+Traduction Anglais-Français de la documentation de Mplayer (2002-2004).
+Contributeur Wikipedia depuis 2009.
+Création et hébergement du site web de l'association Train Miniature Avallonnais, maintenance du site aballo.fr, revendeur informatique.
+
+
+Divers
+
+Permis B obtenu en 1993.
+Hobbies: Musique, Lecture, Informatique de loisirs, Jonglage, Cuisine... 
+Voyages: France, Angleterre, Italie. 

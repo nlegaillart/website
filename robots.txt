@@ -1,0 +1,14 @@
+User-agent: *
+Disallow: /cv.pdf
+Disallow: /cv.odt
+Disallow: /cv.doc
+Disallow: /cv.docx
+Disallow: /cv.rtf
+Disallow: /cv.txt
+
+Disallow: /cv/nlegaillart_cv.pdf
+Disallow: /cv/nlegaillart_cv.odt
+Disallow: /cv/nlegaillart_cv.doc
+Disallow: /cv/nlegaillart_cv.docx
+Disallow: /cv/nlegaillart_cv.rtf
+Disallow: /cv/nlegaillart_cv.txt
