@@ -1,6 +1,9 @@
 miam/b
 miam/t
 miam/s
+miam/[0-9]+.html
+miam/lazy.html
+miam/feed.html
 old/
 pad/
 JsJuggle.zip
