@@ -1,6 +1,7 @@
 miam/b/*.jpg
 miam/t/*.txt
 miam/s/*.jpg
+miam/[0-9].html
 miam/[0-9]+.html
 miam/lazy.html
 miam/feed.html
