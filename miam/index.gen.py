@@ -129,7 +129,7 @@ for page in range(nbpages):
                                       		int(m.group(6)))
 		
 			feed.add(title=htmlparser.unescape(caption),
-			         content=item,
+			         content="<![CDATA[ <a href='https://nicolas.legaillart.fr/miam/b/%s'><img alt='%s' src='https://nicolas.legaillart.fr/miam/b/%s' /></a>]]>" % (item,htmlparser.unescape(caption),item),
 		         	 content_type="html",
 		           	 author="Nicolas",
 	            		 url="http://nicolas.legaillart.fr/miam/b/%s" % item,
