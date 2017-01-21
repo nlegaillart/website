@@ -24,7 +24,7 @@
 	<script>$(function() {$(".lazyload").unveil();});</script>
 
 	<meta property="og:title" content="Une petite faim ?" />
-	<meta property="og:url" content="http://nicolas.legaillart.fr/miam" />
+	<meta property="og:url" content="https://nicolas.legaillart.fr/miam" />
 	<meta property="og:type" content="website" />
 
 </head>

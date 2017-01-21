@@ -19,7 +19,7 @@
 	<script>$(document).ready(function() {$('.quotes').quovolver();});</script>
 
 	<meta property="og:title" content="Quelques citations que j'aime bien" />
-	<meta property="og:url" content="http://nicolas.legaillart.fr/fortunes" />
+	<meta property="og:url" content="https://nicolas.legaillart.fr/fortunes" />
 	<meta property="og:type" content="website" />
 </head>
 

@@ -22,6 +22,6 @@
 	<script src="/js/js.js"></script>
 
         <meta property='og:title' content='Foire aux livres' />
-        <meta property='og:url' content='http://nicolas.legaillart.fr/books' />
+        <meta property='og:url' content='https://nicolas.legaillart.fr/books' />
         <meta property='og:type' content='website' />
 </head>

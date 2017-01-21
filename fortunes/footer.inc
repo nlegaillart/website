@@ -3,7 +3,7 @@
 	<div id='btn_up'><img alt='Retour en haut' title='Retour en haut' src='/img/jquery_scroll_up_icon.png' width='97' /></div>
 	</div>
 	</div>
-	<footer><div class=footer> - <a href='http://legaillart.fr'>Famille Le Gaillart</a> - </div></footer>
+	<footer><div class=footer> - <a href='//legaillart.fr'>Famille Le Gaillart</a> - </div></footer>
 	<br /><br />
 	<!-- Piwik -->
 <script type="text/javascript">
@@ -15,7 +15,7 @@ var piwikTracker = Piwik.getTracker(pkBaseURL + "piwik.php", 9);
 piwikTracker.trackPageView();
 piwikTracker.enableLinkTracking();
 } catch( err ) {}
-</script><noscript><p><img src="http://stats.tourmentine.com/piwik/piwik.php?idsite=9" style="border:0" alt="" /></p></noscript>
+</script><noscript><p><img src="//stats.tourmentine.com/piwik/piwik.php?idsite=9" style="border:0" alt="" /></p></noscript>
 	<!-- End Piwik Tracking Code -->
 </body>
 </html>
