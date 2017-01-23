@@ -2,7 +2,7 @@
 	</div>
 	</div>
 	</div>
-	<footer><div class=footer> - <a href='http://legaillart.fr'>Famille Le Gaillart</a> - </div></footer>
+	<footer><div class=footer> - <a href='//legaillart.fr'>Famille Le Gaillart</a> - </div></footer>
 	<br /><br />
 	<!-- Piwik -->
 <script type="text/javascript">
