@@ -15,7 +15,7 @@
 	<meta content="ObmA5u+NGovrfXvZB62T7q2omVOIX4Fl3mWdGuQkPH8=" name="verify-v1" />
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-	<link rel="alternate" type="application/atom+xml" title="Atom 1.0" href="http://nicolas.legaillart.fr/miam/feed" />
+	<link rel="alternate" type="application/atom+xml" title="Atom 1.0" href="https://nicolas.legaillart.fr/miam/feed" />
 
 	<script src="/js/jquery.min.js"></script>
 	<script src="/js/jquery.unveil.min.js"></script>

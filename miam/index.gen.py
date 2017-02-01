@@ -48,8 +48,8 @@ imagelist.sort(reverse=True)
 
 feed = AtomFeed(title="Une petite faim ?",
                 subtitle=htmlparser.unescape("C'est pas tr&egrave;s joli, mais en tout cas c'est bon"),
-                feed_url="http://nicolas.legaillart.fr/miam/feed",
-                url="http://nicolas.legaillart.fr/miam",
+                feed_url="https://nicolas.legaillart.fr/miam/feed",
+                url="https://nicolas.legaillart.fr/miam",
                 author="Nicolas")
 
 print("creating index (lazyload) page")
@@ -129,7 +129,7 @@ for page in range(nbpages):
                                       		int(m.group(6)))
 		
 			feed.add(title=htmlparser.unescape(caption),
-			         content="<![CDATA[ <a href='https://nicolas.legaillart.fr/miam/b/%s'><img alt='%s' src='https://nicolas.legaillart.fr/miam/b/%s' /></a>]]>" % (item,htmlparser.unescape(caption),item),
+			         content="<a href='https://nicolas.legaillart.fr/miam/b/%s'><img alt='%s' src='https://nicolas.legaillart.fr/miam/s/%s' /></a>" % (item,caption,item),
 		         	 content_type="html",
 		           	 author="Nicolas",
 	            		 url="http://nicolas.legaillart.fr/miam/b/%s" % item,
