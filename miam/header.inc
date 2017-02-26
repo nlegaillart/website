@@ -1,9 +1,9 @@
 
 <!DOCTYPE html>
-<html manifest="cache.manifest">
+<html manifest="cache.manifest" lang="fr">
 <head>
 	<title>C'est pas tr&egrave;s joli, mais en tout cas c'est bon</title>
-	<meta name="description" content="" />
+	<meta content="Site personnel de Nicolas Le Gaillart: coordonn&eacute;es, CV, livres, citations diverses, cuisine" name="description" />
 	<meta charset="utf-8" />
 	<meta name="robots" content="noindex, nofollow" />
 	<link href="/css.css" rel="stylesheet" type="text/css" media="screen" />
@@ -23,10 +23,18 @@
 	<script src="/js/js.js"></script>
 	<script>$(function() {$(".lazyload").unveil();});</script>
 
-	<meta property="og:title" content="Une petite faim ?" />
-	<meta property="og:url" content="https://nicolas.legaillart.fr/miam" />
-	<meta property="og:type" content="website" />
+	<!-- Open Graph meta -->
+	<meta property='og:title' content='Une petite faim ?' />
+	<meta property='og:url' content='https://nicolas.legaillart.fr/miam' />
+	<meta property='og:type' content='website' />
+	<meta property="og:image" content="https://nicolas.legaillart.fr/img/nicolascii.png" />
 
+	<!-- Twitter Card meta -->
+	<meta name="twitter:card" content="https://nicolas.legaillart.fr/img/nicolascii.png">
+	<meta name="twitter:title" content="Une petite faim ?">
+	<meta name="twitter:description" content="Site personnel de Nicolas Le Gaillart">
+	<meta name="twitter:creator" content="@twittimix">
+	<meta name="twitter:url" content="https://nicolas.legaillart.fr/miam" />
 </head>
 
 <body>

@@ -1,10 +1,10 @@
 
 <!DOCTYPE html>
-<html manifest="cache.manifest">
+<html manifest="cache.manifest" lang="fr">
 <head>
 	<title>Foire aux livres</title>
         <meta charset="utf-8" />
-        <meta content="Page personnelle de Nicolas Le Gaillart" name="description" />
+	<meta content="Site personnel de Nicolas Le Gaillart: coordonn&eacute;es, CV, livres, citations diverses, cuisine" name="description" />
         <meta content="cv, curriculum vitae, emploi, informatique, internet,technicien, nicolas, gaillart, gaillard, legaillart, legaillard, programmeur, analyste,developpeur, developpement, administrateur, systeme, reseaux, linux, unix, bsd, dut, bac+2, demandeur" name="keywords" />
 	<meta name="description" content="Don de livres auxquels j'ai trouv&eacute; un &eacute;quivalent num&eacute;rique."/>
         <meta content="text/html; charset=UTF-8" http-equiv="Content-Type" />
@@ -21,7 +21,16 @@
 	<script src="/js/jquery.min.js"></script>
 	<script src="/js/js.js"></script>
 
-        <meta property='og:title' content='Foire aux livres' />
-        <meta property='og:url' content='https://nicolas.legaillart.fr/books' />
-        <meta property='og:type' content='website' />
+	<!-- Open Graph meta -->
+	<meta property='og:title' content='Foire aux livres' />
+	<meta property='og:url' content='https://nicolas.legaillart.fr/books' />
+	<meta property='og:type' content='website' />
+	<meta property="og:image" content="https://nicolas.legaillart.fr/img/nicolascii.png" />
+
+	<!-- Twitter Card meta -->
+	<meta name="twitter:card" content="https://nicolas.legaillart.fr/img/nicolascii.png">
+	<meta name="twitter:title" content="Foire aux livres">
+	<meta name="twitter:description" content="Site personnel de Nicolas Le Gaillart">
+	<meta name="twitter:creator" content="@twittimix">
+	<meta name="twitter:url" content="https://nicolas.legaillart.fr/books" />
 </head>
