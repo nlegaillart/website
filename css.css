@@ -24,8 +24,8 @@ div.matronche{margin-top:-10px;margin-left:20px;font-size:3px;width:50px;font-fa
 div.blah{margin-left:150px;}
 aside{margin-top:0;float:left;}
 td.header{font-weight:bold;}
-div#col1 {float:left;width:300px;margin-top:-20px;}
-div#col2 {float:right;width:300px;margin-top:-20px;}
+div#col1 {float:left;width:350px;margin-top:-20px;}
+div#col2 {float:right;width:350px;margin-top:-20px;}
 @media (max-width: 640px) {
 	* {
 		-webkit-box-sizing: border-box;
@@ -33,8 +33,6 @@ div#col2 {float:right;width:300px;margin-top:-20px;}
 		        box-sizing: border-box;
 	}
 	
-div#col1 {float:left;width:350px;margin-top:-20px;}
-div#col2 {float:left;width:350px;margin-top:-20px;}
 .quotes {font-style : italic;}
 nav{position:fixed;text-align:center;margin-top:-50px;margin-bottom:0px;background-color:white;text-align:justify;width:100%;}
 #header{position:fixed:margin-top:150px;}
