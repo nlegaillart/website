@@ -81,7 +81,7 @@ f.close()
 ''' Individual pages '''
 
 for item in imagelist:
-    print("creating %s page" % item)
+    print("creating p/%s.html page" % item)
     h = open('header.inc', 'r').read()
     f = open('p/%s.html' % item , 'w')
     ''' build HTML structure '''
@@ -93,9 +93,19 @@ for item in imagelist:
 
     if caption:
         imageline += "\n\t\t\t<br />\n\t\t\t<figcaption>%s</figcaption>" % caption
+        h = h.replace("<title>C'est pas tr&egrave;s joli, mais en tout cas c'est bon</title>","<title>C'est pas tr&egrave;s joli, mais en tout cas c'est bon &mdash; %s</title>" % caption)
+        h = h.replace("<meta property='og:title' content='Une petite faim ?' />","<meta property='og:title' content='%s' />" % caption)
+        h = h.replace('<meta name="twitter:title" content="Une petite faim ?" />','<meta name="twitter:title" content="%s" />' % caption)
+
     imageline += "\n\t\t</figure>\n\t\t<br /><br />\n"
 
-    f.write(m)
+    h = h.replace('<meta property="og:image" content="https://nicolas.legaillart.fr/img/nicolascii.png" />','<meta property="og:image" content="https://nicolas.legaillart.fr/miam/b/%s" />' % item)
+    h = h.replace('<meta name="twitter:card" content="https://nicolas.legaillart.fr/img/nicolascii.png" />','<meta name="twitter:card" content="https://nicolas.legaillart.fr/miam/b/%s" />' % item)
+    h = h.replace("<meta property='og:url' content='https://nicolas.legaillart.fr/miam' />","<meta property='og:url' content='https://nicolas.legaillart.fr/miam/p/%s.html' />" % item)
+    h = h.replace('<meta name="twitter:url" content="https://nicolas.legaillart.fr/miam" />','<meta name="twitter:url" content="https://nicolas.legaillart.fr/miam/p/%s.html" />' % item)
+
+    f.write(h)
+
     f.write(imageline)
 
     if imagelist.index(item) != 0:

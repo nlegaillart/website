@@ -30,10 +30,10 @@
 	<meta property="og:image" content="https://nicolas.legaillart.fr/img/nicolascii.png" />
 
 	<!-- Twitter Card meta -->
-	<meta name="twitter:card" content="https://nicolas.legaillart.fr/img/nicolascii.png">
-	<meta name="twitter:title" content="Une petite faim ?">
-	<meta name="twitter:description" content="Site personnel de Nicolas Le Gaillart">
-	<meta name="twitter:creator" content="@twittimix">
+	<meta name="twitter:card" content="https://nicolas.legaillart.fr/img/nicolascii.png" />
+	<meta name="twitter:title" content="Une petite faim ?" />
+	<meta name="twitter:description" content="Site personnel de Nicolas Le Gaillart" />
+	<meta name="twitter:creator" content="@twittimix" />
 	<meta name="twitter:url" content="https://nicolas.legaillart.fr/miam" />
 </head>
 
