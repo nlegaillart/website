@@ -103,10 +103,11 @@ for item in imagelist:
     else:
         f.write("Suivant | ")
 
+    f.write("<a href='/miam'>Index</a>")
     try:
-        f.write("<a href='/miam/p/%s.html'>Pr&eacute;c&eacute;dent</a>" % imagelist[imagelist.index(item)+1])
+        f.write(" | <a href='/miam/p/%s.html'>Pr&eacute;c&eacute;dent</a>" % imagelist[imagelist.index(item)+1])
     except:
-        f.write("Pr&eacute;c&eacute;dent")
+        f.write(" | Pr&eacute;c&eacute;dent")
 
     f.write(footer())
 
