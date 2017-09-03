@@ -12,7 +12,7 @@ p.smallquotes{font-size:0.9em;font-style : italic;}
 td{padding:0px 6px 0px 6px;}
 img{border:solid #777 1px;-khtml-border-radius:1.2em;-moz-border-radius:1.2em;-webkit-border-radius:1.2em;border-radius:1.2em;}
 .lazyload{border:solid #777 1px;-khtml-border-radius:1.2em;-moz-border-radius:1.2em;-webkit-border-radius:1.2em;border-radius:1.2em;opacity:0;-moz-transition:opacity 2s;-webkit-transition:opacity 2s;-o-transition:opacity 2s;transition:opacity 2s;}
-h1{border:solid #eee 0px;-khtml-border-radius:1.2em;-moz-border-radius:1.2em;-webkit-border-radius:1.2em;border-radius:1.2em;margin:50px 10px 50px 10px;padding-left:10px;max-width:300px;text-align:left;}
+h1{border:solid #eee 0px;-khtml-border-radius:1.2em;-moz-border-radius:1.2em;-webkit-border-radius:1.2em;border-radius:1.2em;margin:50px 10px 50px 10px;padding-left:10px;max-width:400px;text-align:left;}
 a:link{text-decoration:none;color:#0000FF;}
 a:visited{text-decoration:none;color:#0000FF;}
 a:hover{text-decoration:underline;}
