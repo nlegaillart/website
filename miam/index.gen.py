@@ -166,10 +166,10 @@ for page in range(nbpages):
                                       		int(m.group(6)))
 		
 			feed.add(title=htmlparser.unescape(caption),
-			         content="<a href='https://nicolas.legaillart.fr/miam/b/%s'><img alt='%s' src='https://nicolas.legaillart.fr/miam/s/%s' /></a>" % (item,caption,item),
+			         content="<a href='https://nicolas.legaillart.fr/miam/p/%s.html'><img alt='%s' src='https://nicolas.legaillart.fr/miam/s/%s' /></a>" % (item,caption,item),
 		         	 content_type="html",
 		           	 author="Nicolas",
-	            		 url="http://nicolas.legaillart.fr/miam/b/%s" % item,
+	            		 url="https://nicolas.legaillart.fr/miam/p/%s.html" % item,
 				 updated=itemdate)
 
 	f.write(navlinks(page))
