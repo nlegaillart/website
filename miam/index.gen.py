@@ -52,6 +52,8 @@ feed = AtomFeed(title="Une petite faim ?",
                 url="https://nicolas.legaillart.fr/miam",
                 author="Nicolas")
 
+''' Lazyload page '''
+
 print("creating index (lazyload) page")
 h = open('header.inc', 'r').read()
 f = open('index.html', 'w')
@@ -75,6 +77,40 @@ for item in imagelist:
 f.write(footer())
 
 f.close()
+
+''' Individual pages '''
+
+for item in imagelist:
+    print("creating %s page" % item)
+    h = open('header.inc', 'r').read()
+    f = open('p/%s.html' % item , 'w')
+    ''' build HTML structure '''
+    imageline = "\t\t<figure>\n\t\t\t<a href='/miam/b/%s' data-lightbox='lightbox'" % item
+    caption = getcaption(item)
+    if caption:
+        imageline += " title='%s'" % caption
+    imageline += ">\n\t\t\t\t<img src='/miam/s/%s' />\n\t\t\t</a>" % item
+
+    if caption:
+        imageline += "\n\t\t\t<br />\n\t\t\t<figcaption>%s</figcaption>" % caption
+    imageline += "\n\t\t</figure>\n\t\t<br /><br />\n"
+
+    f.write(m)
+    f.write(imageline)
+
+    if imagelist.index(item) != 0:
+        f.write("<a href='/miam/p/%s.html'>Suivant</a> | " % imagelist[imagelist.index(item)-1])
+    else:
+        f.write("Suivant | ")
+
+    try:
+        f.write("<a href='/miam/p/%s.html'>Pr&eacute;c&eacute;dent</a>" % imagelist[imagelist.index(item)+1])
+    except:
+        f.write("Pr&eacute;c&eacute;dent")
+
+    f.write(footer())
+
+    f.close()
 
 ''' classic navigation pages '''
 
