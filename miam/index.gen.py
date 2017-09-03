@@ -98,8 +98,8 @@ for item in imagelist:
         h = h.replace('<meta name="twitter:title" content="Une petite faim ?" />','<meta name="twitter:title" content="%s" />' % caption)
 
     imageline += "\n\t\t</figure>\n\t\t<br /><br />\n"
-
-    h = h.replace('<meta property="og:image" content="https://nicolas.legaillart.fr/img/nicolascii.png" />','<meta property="og:image" content="https://nicolas.legaillart.fr/miam/b/%s" />' % item)
+    im = Image.open("b/%s" % item)
+    h = h.replace('<meta property="og:image" content="https://nicolas.legaillart.fr/img/nicolascii.png" />','<meta property="og:image" content="https://nicolas.legaillart.fr/miam/b/%s" />\n\t<meta property="og:image:width" content="%d" />\n\t<meta property="og:image:height" content="%d" />' % (item, im.size[0], im.size[1]))
     h = h.replace('<meta name="twitter:card" content="https://nicolas.legaillart.fr/img/nicolascii.png" />','<meta name="twitter:card" content="https://nicolas.legaillart.fr/miam/b/%s" />' % item)
     h = h.replace("<meta property='og:url' content='https://nicolas.legaillart.fr/miam' />","<meta property='og:url' content='https://nicolas.legaillart.fr/miam/p/%s.html' />" % item)
     h = h.replace('<meta name="twitter:url" content="https://nicolas.legaillart.fr/miam" />','<meta name="twitter:url" content="https://nicolas.legaillart.fr/miam/p/%s.html" />' % item)
