@@ -108,16 +108,17 @@ for item in imagelist:
 
     f.write(imageline)
 
+    f.write("\t<nav><p class='header'>")
     if imagelist.index(item) != 0:
         f.write("<a href='/miam/p/%s.html'>Suivant</a> | " % imagelist[imagelist.index(item)-1])
     else:
         f.write("Suivant | ")
-
     f.write("<a href='/miam'>Index</a>")
     try:
         f.write(" | <a href='/miam/p/%s.html'>Pr&eacute;c&eacute;dent</a>" % imagelist[imagelist.index(item)+1])
     except:
         f.write(" | Pr&eacute;c&eacute;dent")
+    f.write("</p></nav>\n")
 
     f.write(footer())
 
