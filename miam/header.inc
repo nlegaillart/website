@@ -5,6 +5,8 @@
 	<title>C'est pas tr&egrave;s joli, mais en tout cas c'est bon</title>
 	<meta name="description" content="Site personnel de Nicolas Le Gaillart: coordonn&eacute;es, CV, livres, citations diverses, cuisine" />
 	<meta charset="utf-8" />
+	<meta http-equiv="x-ua-compatible" content="ie=edge"
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 	<meta name="robots" content="noindex, nofollow" />
 	<link href="/css.css" rel="stylesheet" type="text/css" media="screen" />
 	<link href="/lightbox.css" rel="stylesheet" type="text/css" media="screen" />
@@ -13,7 +15,6 @@
 	<link rel="icon" type="image/gif" href="/animated_favicon1.gif" />
 	<link rel="apple-touch-icon" href="/apple-touch-icon.png" />
 	<meta name="verify-v1" content="ObmA5u+NGovrfXvZB62T7q2omVOIX4Fl3mWdGuQkPH8=" />
-	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
 	<link rel="alternate" type="application/atom+xml" title="Atom 1.0" href="https://nicolas.legaillart.fr/miam/feed" />
 
