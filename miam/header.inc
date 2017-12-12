@@ -9,7 +9,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 	<meta name="robots" content="noindex, nofollow" />
 	<link href="/css.css" rel="stylesheet" type="text/css" media="screen" />
-	<link href="/lightbox.css" rel="stylesheet" type="text/css" media="screen" />
+	<link href="/lightbox.min.css" rel="stylesheet" type="text/css" media="screen" />
 	<link href="/p.css" rel="stylesheet" type="text/css" media="print" />
 	<link rel="shortcut icon" href="/favicon.ico" />
 	<link rel="icon" type="image/gif" href="/animated_favicon1.gif" />
