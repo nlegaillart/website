@@ -5,17 +5,34 @@
 	</div>
 	<footer><div class=footer> - <a href='//legaillart.fr'>Famille Le Gaillart</a> - </div></footer>
 	<br /><br />
-	<!-- Piwik -->
-<script type="text/javascript">
-var pkBaseURL = (("https:" == document.location.protocol) ? "https://stats.tourmentine.com/piwik/" : "http://stats.tourmentine.com/piwik/");
-document.write(unescape("%3Cscript src=\'" + pkBaseURL + "piwik.js\' type=\'text/javascript\'%3E%3C/script%3E"));
-</script><script type="text/javascript">
-try {
-var piwikTracker = Piwik.getTracker(pkBaseURL + "piwik.php", 9);
-piwikTracker.trackPageView();
-piwikTracker.enableLinkTracking();
-} catch( err ) {}
-</script><noscript><p><img src="//stats.tourmentine.com/piwik/piwik.php?idsite=9" style="border:0" alt="" /></p></noscript>
-	<!-- End Piwik Tracking Code -->
+        <!-- Piwik -->
+        <script type="text/javascript">
+         var _paq = _paq || [];
+
+         _paq.push([function() { 
+                var self = this; 
+                function getOriginalVisitorCookieTimeout() { 
+                        var now = new Date(), 
+                        nowTs = Math.round(now.getTime() / 1000), 
+                        visitorInfo = self.getVisitorInfo(); 
+                        var createTs = parseInt(visitorInfo[2]); 
+                        var cookieTimeout = 33696000; // 13 mois en secondes 
+                        var originalTimeout = createTs + cookieTimeout - nowTs; 
+                        return originalTimeout; 
+                } 
+                this.setVisitorCookieTimeout( getOriginalVisitorCookieTimeout() ); 
+          }]);
+          /* tracker methods like "setCustomDimension" should be called before "trackPageView" */
+          _paq.push(['trackPageView']);
+          _paq.push(['enableLinkTracking']);
+          (function() {
+            var u="//stats.tourmentine.com/piwik/";
+            _paq.push(['setTrackerUrl', u+'piwik.php']);
+            _paq.push(['setSiteId', '9']);
+            var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
+            g.type='text/javascript'; g.async=true; g.defer=true; g.src=u+'piwik.js'; s.parentNode.insertBefore(g,s);
+          })();
+        </script>
+        <!-- End Piwik Code -->
 </body>
 </html>
