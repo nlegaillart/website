@@ -20,7 +20,7 @@
 
 	<script src="/js/jquery.min.js"></script>
 	<script src="/js/jquery.unveil.min.js"></script>
-	<script src="/js/lightbox-2.6.min.js"></script>
+	<script src="/js/lightbox.min.js"></script>
 	<script src="/js/js.js"></script>
 	<script>$(function() {$(".lazyload").unveil();});</script>
 
