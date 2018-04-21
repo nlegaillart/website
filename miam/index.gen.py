@@ -4,13 +4,9 @@
 import os
 import datetime
 import re
-import sys
 from pyatom import AtomFeed
 from PIL import Image
 from html.parser import HTMLParser
-from importlib import reload
-reload(sys)
-#sys.setdefaultencoding('utf8')
 htmlparser = HTMLParser()
 
 ''' create navigation links '''
