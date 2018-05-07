@@ -70,7 +70,7 @@ echo "<div id='btn_up'><img alt='Retour en haut' title='Retour en haut' src='/im
 ?>
 </div>
 </div>
-<footer><div class="footer"> - <a href="//legaillart.fr">Famille Le Gaillart</a> - <a href='https://stats.tourmentine.com/piwik/index.php?module=CoreAdminHome&action=optOut&language=fr'>Cookies</a> - </div></footer>
+<footer><div class="footer"> - <a href="//legaillart.fr">Famille Le Gaillart</a> - <a href='https://stats.tourmentine.com/piwik/index.php?module=CoreAdminHome&action=optOut&language=fr' rel='nofollow'>Cookies</a> - </div></footer>
 <br /><br />
         <!-- Piwik -->
         <script type="text/javascript">
