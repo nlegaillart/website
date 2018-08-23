@@ -1,2 +1,2 @@
 build:
-	./index.gen.sh
+	php index.gen.php > index.html
