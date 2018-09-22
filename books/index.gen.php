@@ -7,7 +7,7 @@ include "header.php";
 <body>
 <div class="main">
 <div class="main-inside">
-<nav><p class='header'><a href='/'>Accueil</a> | <a href='/contact'>Coordonn&eacute;es</a> | <a href='/cv'>CV</a> | Livres | <a href='/fortunes'>Citations</a> | <a href='/miam'>Cuisine</a></p></nav>
+<nav><p class='header'><a href='/'>Accueil</a> | <a href='/contact'>Coordonn&eacute;es</a> | <a href='/cv'>CV</a> | Livres | <a href='/fortunes'>Citations</a> | <a href='links'>Liens</a> | <a href='/miam'>Cuisine</a></p></nav>
 
 <?php
 $FileName = "foirolivres.csv";

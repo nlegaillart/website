@@ -38,7 +38,7 @@
 <body>
 	<div class="main">
 	<div class="main-inside">
-	<nav><p class="header"><a href='/'>Accueil</a> | <a href='/contact'>Coordonn&eacute;es</a> | <a href='/cv'>CV</a> | <a href='/books'>Livres</a> | Citations | <a href='links'>Liens</a> | <a href='/miam'>Cuisine</a></p></nav>
+	<nav><p class="header"><a href='/'>Accueil</a> | <a href='/contact'>Coordonn&eacute;es</a> | <a href='/cv'>CV</a> | <a href='/books'>Livres</a> | <a href='/fortunes'>Citations</a> | Liens | <a href='/miam'>Cuisine</a></p></nav>
 
-	<h1>Citations</h1>
+	<h1>Liens</h1>
 

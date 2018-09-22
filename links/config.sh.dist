@@ -1,0 +1,3 @@
+FETCHCMD="/usr/local/bin/curl"
+FEEDSRC=""
+TMPFEED="/tmp/links.cache.xml"
