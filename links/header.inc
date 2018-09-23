@@ -42,3 +42,4 @@
 
 	<h1>Liens</h1>
 
+	<p>Voici les dix derniers liens mis en &quot;marque-page&quot;, soit parce qu'ils sont d'un quelquonque int&eacute;r&ecirc;t, soit pour les lire plus tard. Qui sait, peut-&ecirc;tre vous seront-ils utiles !</p>
