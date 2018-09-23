@@ -2,7 +2,7 @@
 <!DOCTYPE html>
 <html manifest="cache.manifest" lang="fr">
 <head>
-	<title>Citations</title>
+	<title>Liens</title>
 	<meta charset="utf-8" />
 	<meta http-equiv="x-ua-compatible" content="ie=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
