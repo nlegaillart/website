@@ -15,6 +15,7 @@
 	<link rel="apple-touch-icon" href="/apple-touch-icon.png" />
 	<meta name="verify-v1" content="ObmA5u+NGovrfXvZB62T7q2omVOIX4Fl3mWdGuQkPH8=" />
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<meta name="robots" content="noindex" />
 
 	<script src="/js/jquery.min.js"></script>
 	<script src="/js/jquery.quovolver.js"></script>
