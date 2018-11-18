@@ -4,7 +4,7 @@
 	<footer><div class=footer> - <a href='//legaillart.fr'>Famille Le Gaillart</a> - <a href='https://stats.tourmentine.com/piwik/index.php?module=CoreAdminHome&action=optOut&language=fr' rel='nofollow'>Cookies</a> - </div></footer>
 	<br /><br />
         <!-- Piwik -->
-        <script type="text/javascript">
+        <script>
          var _paq = _paq || [];
 
          _paq.push([function() { 

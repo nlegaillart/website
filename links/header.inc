@@ -1,6 +1,6 @@
 
 <!DOCTYPE html>
-<html manifest="cache.manifest" lang="fr">
+<html lang="fr">
 <head>
 	<title>Liens</title>
 	<meta charset="utf-8" />
@@ -23,8 +23,8 @@
 	<script>$(document).ready(function() {$('.quotes').quovolver();});</script>
 
 	<!-- Open Graph meta -->
-	<meta property='og:title' content='Quelques citations que j'aime bien' />
-	<meta property='og:url' content='https://nicolas.legaillart.fr/fortunes' />
+	<meta property='og:title' content='Mes derniers marque-pages' />
+	<meta property='og:url' content='https://nicolas.legaillart.fr/links' />
 	<meta property='og:type' content='website' />
 	<meta property="og:image" content="https://nicolas.legaillart.fr/img/nicolascii.png" />
 
@@ -33,7 +33,7 @@
 	<meta name="twitter:title" content="Quelques citations que j'aime bien">
 	<meta name="twitter:description" content="Site personnel de Nicolas Le Gaillart">
 	<meta name="twitter:creator" content="@twittimix">
-	<meta name="twitter:url" content="https://nicolas.legaillart.fr/fortunes" />
+	<meta name="twitter:url" content="https://nicolas.legaillart.fr/links" />
 </head>
 
 <body>
