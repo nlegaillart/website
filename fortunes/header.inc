@@ -22,7 +22,7 @@
 	<script>$(document).ready(function() {$('.quotes').quovolver();});</script>
 
 	<!-- Open Graph meta -->
-	<meta property='og:title' content='Quelques citations que j'aime bien' />
+	<meta property='og:title' content="Quelques citations que j'aime bien" />
 	<meta property='og:url' content='https://nicolas.legaillart.fr/fortunes' />
 	<meta property='og:type' content='website' />
 	<meta property="og:image" content="https://nicolas.legaillart.fr/img/nicolascii.png" />
