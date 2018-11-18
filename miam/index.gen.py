@@ -125,7 +125,7 @@ for item in imagelist:
 
 ''' 10 items or less per page '''
 lists = [imagelist[i:i+10] for i in range(0, len(imagelist), 10)]
-nbpages = len(imagelist)/10
+nbpages = round(len(imagelist)/10)
 if len(imagelist)%10 != 0:
     nbpages += 1 
 
