@@ -3,7 +3,7 @@ miam/t/*.txt
 miam/s/*.jpg
 miam/p/*.jpg.html
 miam/[0-9].html
-miam/[0-9]+.html
+miam/[0-9]*.html
 miam/lazy.html
 miam/feed.html
 miam/index.html
