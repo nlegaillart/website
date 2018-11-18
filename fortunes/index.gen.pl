@@ -17,7 +17,7 @@ $_ =~ s/\n$/<br\ \/>/g;
 $_ =~ s/%/<\/p>\n\t<p class='smallquotes'>/g;
 print ECRIRE "\t".$_;
 }
-
+print ECRIRE "</div>\n";
 close(LIRE);
 #close(ECRIRE);
 

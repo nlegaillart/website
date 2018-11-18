@@ -1,5 +1,3 @@
-	</p>
-	</div>
 	<div id='btn_up'><img alt='Retour en haut' title='Retour en haut' src='/img/jquery_scroll_up_icon.png' width='97' /></div>
 	</div>
 	</div>
