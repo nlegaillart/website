@@ -22,7 +22,7 @@ def navlinks(currentpage):
 
 ''' return page footer code '''
 def footer():
-    return open('footer.inc', 'r').read()
+    return open('../inc/footer.inc', 'r').read()
 
 ''' if caption file exists, get its content '''
 def getcaption(file):

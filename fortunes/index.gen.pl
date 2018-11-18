@@ -21,7 +21,7 @@ print ECRIRE "\t".$_;
 close(LIRE);
 #close(ECRIRE);
 
-open(LIRE,"footer.inc");
+open(LIRE,"../inc/footer.inc");
 #open(ECRIRE,">>index.html");
 
 while (<LIRE>) {

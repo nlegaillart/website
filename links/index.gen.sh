@@ -15,4 +15,4 @@ do
 done
 echo -e "\t</ul>" >> index.html
 
-cat footer.inc >> index.html
+cat ../inc/footer.inc >> index.html
