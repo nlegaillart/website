@@ -8,7 +8,6 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 	<meta name="keywords" content="cv, curriculum vitae, emploi, informatique, internet,technicien, nicolas, gaillart, gaillard, legaillart, legaillard, programmeur, analyste,developpeur, developpement, administrateur, systeme, reseaux, linux, unix, bsd, dut, bac+2, demandeur" />
 	<meta name="description" content="Don de livres auxquels j'ai trouv&eacute; un &eacute;quivalent num&eacute;rique."/>
-	<meta content="text/html; charset=UTF-8" http-equiv="Content-Type" />
 	<meta name="revisit-after" content="10 days" />
 	<link href="/css.css" rel="stylesheet" type="text/css" media="screen" />
 	<link href="/p.css" rel="stylesheet" type="text/css" media="print" />
