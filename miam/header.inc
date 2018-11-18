@@ -1,6 +1,6 @@
 
 <!DOCTYPE html>
-<html manifest="cache.manifest" lang="fr">
+<html lang="fr">
 <head>
 	<title>C'est pas tr&egrave;s joli, mais en tout cas c'est bon</title>
 	<meta name="description" content="Site personnel de Nicolas Le Gaillart: coordonn&eacute;es, CV, livres, citations diverses, cuisine" />

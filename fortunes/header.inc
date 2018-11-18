@@ -1,6 +1,6 @@
 
 <!DOCTYPE html>
-<html manifest="cache.manifest" lang="fr">
+<html lang="fr">
 <head>
 	<title>Citations</title>
 	<meta charset="utf-8" />
