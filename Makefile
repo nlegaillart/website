@@ -1,7 +1,9 @@
-.PHONY: books miam fortunes links
+.PHONY: navbar books miam fortunes links 
 
-all: books miam fortunes links
+all: navbar books miam fortunes links
 
+navbar: 
+	./gennavbar.sh
 books:
 	cd books && make
 miam: 
