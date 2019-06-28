@@ -42,10 +42,20 @@ echo "<h1>Foire aux livres</h1>";
 <p>Je lis de plus en plus de livres &eacute;lectroniques. Et comme je sais que la plupart des gens kiffent encore le &quot;papier&quot;, cette technologie du moyen-&acirc;ge qui assassine nos amis les arbres, je leur pardonne et leur en fait profiter en faisant don des quelques exemplaires auxquels j'ai trouv&eacute; un &eacute;quivalent num&eacute;rique.</p>
 
 <p>Voila donc le principe: vous choisissez le(s) livre(s) que vous voulez, et vous me le(s) demandez par mail (le lien &quot;r&eacute;server&quot; devrait en principe le remplir &agrave; votre place), en indiquant si possible le lieu et la date du don, l'id&eacute;al &eacute;tant que cela se fasse autour d'un verre/d&eacute;j/diner/whatever, bref de fa&ccedil;on conviviale. Premier arriv&eacute;, premier servi; offre r&eacute;serv&eacute;e &agrave; Paris ou r&eacute;gion parisienne, ou alors il faudra &ecirc;tre TR&Egrave;S gentil pour que je vous l'envoie par la poste :)</p>
-
-<p>Il y a actuellement <?php echo $Max; ?> livres &agrave; donner, mais n'h&eacute;sitez pas &agrave; revenir, cette liste &eacute;tant appel&eacute;e &agrave; s'&eacute;toffer.</p>
+<?php
+if ($Max == 0)
+	$dispo = "Il n'y a malheureusmement plus aucun livre";
+elseif ($Max == 1)
+	$dispo = "Il y a actuellement un livre";
+else
+	$dispo = "Il y a actuellement $Max livres";
+?>
+<p><?php echo $dispo; ?> &agrave; donner, mais n'h&eacute;sitez pas &agrave; revenir, cette liste &eacute;tant appel&eacute;e &agrave; s'&eacute;toffer.</p>
+<!--<p>Il y a actuellement <?php echo $Max; ?> livres &agrave; donner, mais n'h&eacute;sitez pas &agrave; revenir, cette liste &eacute;tant appel&eacute;e &agrave; s'&eacute;toffer.</p>-->
 <br />
 <?php
+if ($Max>0)
+{
 echo "<table>\n";
 echo "<tr><td class='header'>Auteur</td><td class='header'>Titre</td><td class='header'>Format</td><td></td></tr>\n";
 for($Cpt=0; $Cpt<$Max; $Cpt++)
@@ -61,7 +71,7 @@ for($Cpt=0; $Cpt<$Max; $Cpt++)
 }
 echo "<tr><td class='header'>Auteur</td><td class='header'>Titre</td><td class='header'>Format</td><td></td></tr>\n";
 echo "</table>\n";
-
+}
 include "../inc/footer.inc";
 
 ?>
