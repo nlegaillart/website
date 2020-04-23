@@ -41,6 +41,6 @@
 <body>
         <div class="main">
         <div class="main-inside">
-        <nav><p class="header"><a href='/'>Accueil</a> | <a href='/contact'>Coordonn&eacute;es</a> | <a href='/cv'>CV</a> | <a href='/books'>Livres</a> | <a href='/fortunes'>Citations</a> | <a href='links'>Liens</a> | Cuisine</p></nav>
+        <nav><p class="header"><a href='/'>Accueil</a> | <a href='/contact'>Coordonn&eacute;es</a> | <a href='/cv'>CV</a> | <a href='/fortunes'>Citations</a> | <a href='links'>Liens</a> | Cuisine</p></nav>
         <h1>Une petite faim ?</h1>
         <div class="centeredcontent">

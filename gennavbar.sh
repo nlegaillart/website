@@ -1,7 +1,7 @@
 #!/bin/sh
 
-pages="/ /contact /cv /books /fortunes /links /miam"
-names="Accueil Coordonn&eacute;es CV Livres Citations Liens Cuisine"
+pages="/ /contact /cv /fortunes /links /miam"
+names="Accueil Coordonn&eacute;es CV Citations Liens Cuisine"
 max=`echo $names | wc -w`
 
 echo "Generating navbars..."
