@@ -58,6 +58,22 @@ feed.author({"name":"Nicolas"})
 #                 url="https://nicolas.legaillart.fr/miam",
 #                 author="Nicolas")
 
+''' gemini page '''
+print("creating gemini page")
+h = open('header.gmi', 'r').read()
+f = open('miam.gmi', 'w')
+f.write(h)
+
+for item in imagelist:
+    ''' build page structure '''
+    imageline = "=> b/%s" % item
+    caption = getcaption(item)
+    if caption:
+        imageline += " %s\n" % html.unescape(caption)
+    f.write(imageline)
+
+f.close()
+
 ''' Lazyload page '''
 
 print("creating index (lazyload) page")
@@ -202,3 +218,4 @@ for page in range(int(nbpages)):
 # f.write(feed.to_string())
 # f.close()
 feed.atom_file('feed.html')
+
