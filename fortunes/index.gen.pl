@@ -16,11 +16,6 @@ print GEMECRIRE "#Citations
 
 Voici quelques citations que j'aime bien.
 
-Vous pouvez télécharger les fichiers de *fortunes* ici:
-
-=> gemini://nicolas.legaillart.fr/fortunes fortunes
-=> gemini://nicolas.legaillart.fr/fortunes.dat fortunes.dat
-
 ";
 while (<LIRE>) {
 print GEMECRIRE $_."\n";
@@ -30,6 +25,14 @@ $_ =~ s/%/<\/p>\n\t<p class='smallquotes'>/g;
 print ECRIRE "\t".$_;
 }
 print ECRIRE "</div>\n";
+print GEMECRIRE "
+%%
+
+Vous pouvez télécharger les fichiers de fortunes ici:
+
+=> gemini://nicolas.legaillart.fr/fortunes fortunes
+=> gemini://nicolas.legaillart.fr/fortunes.dat fortunes.dat
+";
 close(LIRE);
 #close(ECRIRE);
 
