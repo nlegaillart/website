@@ -46,12 +46,14 @@ for fname in dirList:
             imagelist.append(fname)
 imagelist.sort(reverse=True)
 
+print("creating feed")
 feed = FeedGenerator()
 feed.id("https://nicolas.legaillart.fr/miam")
 feed.link(href="https://nicolas.legaillart.fr/miam/feed")
 feed.title("Une petite faim ?")
 feed.subtitle("C'est pas tr&egrave;s joli, mais en tout cas c'est bon")
 feed.author({"name":"Nicolas"})
+feed.atom_file('feed.html')
 # feed = AtomFeed(title="Une petite faim ?",
 #                 subtitle="C'est pas tr&egrave;s joli, mais en tout cas c'est bon",
 #                 feed_url="https://nicolas.legaillart.fr/miam/feed",
@@ -151,18 +153,15 @@ for item in imagelist:
 ''' 10 items or less per page '''
 lists = [imagelist[i:i+10] for i in range(0, len(imagelist), 10)]
 nbpages = round(len(imagelist)/10)
-if len(imagelist)%10 != 0:
-    nbpages += 1 
 
 for page in range(int(nbpages)):
-    print("creating static page %s/%s"%(page+1,nbpages))
+    print("creating static page %s/%s"%(page,nbpages-1))
     h = open('header.inc', 'r').read()
     f = open('%s.html' % page, 'w')
     #m = h.replace('</head>','\t<!-- if javascript is supported, redirect to lazyload navigation -->\n\t<script type="text/javascript">$(location).attr("href","http://nicolas.legaillart.fr/miam");</script>\n</head>')
     f.write(h)
     f.write(navlinks(page))
     for item in lists[page]:
-
         ''' if thumbnail does not exist, create it (require py-imaging, aka PIL) '''
         if not os.path.isfile("s/" + item):
             print ("creating thumbnail for %s" % item)
@@ -217,5 +216,4 @@ for page in range(int(nbpages)):
 # f = open('feed.html', 'w')
 # f.write(feed.to_string())
 # f.close()
-feed.atom_file('feed.html')
 
