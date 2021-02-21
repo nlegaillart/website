@@ -18,7 +18,7 @@ Voici quelques citations que j'aime bien.
 
 ";
 while (<LIRE>) {
-print GEMECRIRE $_."\n";
+print GEMECRIRE "> ".$_."\n";
 $_ =~ s/\(/\n\t<br\ \/>&nbsp;&nbsp;&nbsp;&nbsp;\(/g;
 $_ =~ s/\n$/<br\ \/>/g;
 $_ =~ s/%/<\/p>\n\t<p class='smallquotes'>/g;
