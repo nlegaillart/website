@@ -40,8 +40,8 @@
 => contact.gmi mes coordonnées
 => cv.gmi mon CV
 => fortunes.gmi quelques citations
-=> links.gmi des liens issus de mes séances de surf. 
-=> miam.gmi Et si vous n'avez pas froid aux yeux, vous pourrez également suivre mes modestes premiers pas en cuisine.
+=> links.gmi des liens issus de mes séances de surf
+=> miam.gmi et si vous n'avez pas froid aux yeux, vous pourrez également suivre mes modestes premiers pas en cuisine.
 
 Bonne visite !
 
