@@ -47,9 +47,10 @@ imagelist.sort(reverse=True)
 
 feed = feedgenerator.Atom1Feed(
      title="Une petite faim ?",
-     link="https://nicolas.legaillart.fr/miam/feed",
+     link="https://nicolas.legaillart.fr/miam",
      description="C'est pas tr&egrave;s joli, mais en tout cas c'est bon",
      language="fr",
+     feed_url="https://nicolas.legaillart.fr/miam/feed",
 )
 
 ''' gemini page '''
@@ -152,7 +153,11 @@ for item in imagelist:
                                    int(m.group(6)))
     nbfeed += 1
     if nbfeed<=10:
-        feed.add_item(title="%s" % html.unescape(caption) ,link="https://nicolas.legaillart.fr/miam/p/%s.html" % item,description="<a href='https://nicolas.legaillart.fr/miam/p/%s.html'><img alt='%s' src='https://nicolas.legaillart.fr/miam/s/%s' /></a>" % (item,html.unescape(caption),item),pubdate=itemdate) 
+        feed.add_item(author_name="Nicolas",
+                      title="%s" % html.unescape(caption),
+                      link="https://nicolas.legaillart.fr/miam/p/%s.html" % item,
+                      description="<a href='https://nicolas.legaillart.fr/miam/p/%s.html'><img alt='%s' src='https://nicolas.legaillart.fr/miam/s/%s' /></a>" % (item,html.unescape(caption),item),
+                      pubdate=itemdate) 
 
 
 
