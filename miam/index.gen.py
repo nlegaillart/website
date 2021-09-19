@@ -5,9 +5,8 @@ import os
 import datetime
 import re
 import html
-#from pyatom import AtomFeed
+import feedgenerator
 from PIL import Image
-from feedgen.feed import FeedGenerator
 from html.parser import HTMLParser
 htmlparser = HTMLParser()
 
@@ -47,18 +46,12 @@ for fname in dirList:
 imagelist.sort(reverse=True)
 
 print("creating feed")
-feed = FeedGenerator()
-feed.id("https://nicolas.legaillart.fr/miam")
-feed.link(href="https://nicolas.legaillart.fr/miam/feed")
-feed.title("Une petite faim ?")
-feed.subtitle("C'est pas tr&egrave;s joli, mais en tout cas c'est bon")
-feed.author({"name":"Nicolas"})
-feed.atom_file('feed.html')
-# feed = AtomFeed(title="Une petite faim ?",
-#                 subtitle="C'est pas tr&egrave;s joli, mais en tout cas c'est bon",
-#                 feed_url="https://nicolas.legaillart.fr/miam/feed",
-#                 url="https://nicolas.legaillart.fr/miam",
-#                 author="Nicolas")
+feed = feedgenerator.Atom1Feed(
+     title="Une petite faim ?",
+     link="https://nicolas.legaillart.fr/miam/feed",
+     description="C'est pas tr&egrave;s joli, mais en tout cas c'est bon",
+     language="fr",
+)
 
 ''' gemini page '''
 print("creating gemini page")
@@ -148,6 +141,9 @@ for item in imagelist:
 
     f.close()
 
+    feed.add_item(title="%s" % html.unescape(caption) ,link="https://nicolas.legaillart.fr/miam/p/%s.html" % item,description="<a href='https://nicolas.legaillart.fr/miam/p/%s.html'><img alt='%s' src='https://nicolas.legaillart.fr/miam/s/%s' /></a>" % (item,caption,item))  
+
+
 ''' classic navigation pages '''
 
 ''' 10 items or less per page '''
@@ -196,24 +192,11 @@ for page in range(int(nbpages)):
                                             int(m.group(4)),
                                             int(m.group(5)),
                                             int(m.group(6)))
-       
-            #feedentry = feed.add_entry()
-            #feedentry.id(caption)
-            #feedentry.title(caption)
-            #feedentry.link(href="https://nicolas.legaillart.fr/miam/p/%s.html" % item)
-
-#             feed.add(title=caption,
-#                      content="<a href='https://nicolas.legaillart.fr/miam/p/%s.html'><img alt='%s' src='https://nicolas.legaillart.fr/miam/s/%s' /></a>" % (item,caption,item),
-#                      content_type="html",
-#                      author="Nicolas",
-#                          url="https://nicolas.legaillart.fr/miam/p/%s.html" % item,
-#                  updated=itemdate)
 
     f.write(navlinks(page))
     f.write(footer())
     f.close()
 
-# f = open('feed.html', 'w')
-# f.write(feed.to_string())
-# f.close()
+with open('feed.html', 'w') as fp:
+     feed.write(fp, 'utf-8')
 
