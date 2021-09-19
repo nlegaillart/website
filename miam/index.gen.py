@@ -142,9 +142,17 @@ for item in imagelist:
 
     f.close()
 
+    m = re.search('(\d{4})(\d{2})(\d{2})_(\d{2})(\d{2})(\d{2}).*',item)
+    if m:
+        itemdate=datetime.datetime(int(m.group(1)),
+                                   int(m.group(2)),
+                                   int(m.group(3)),
+                                   int(m.group(4)),
+                                   int(m.group(5)),
+                                   int(m.group(6)))
     nbfeed += 1
     if nbfeed<=10:
-        feed.add_item(title="%s" % html.unescape(caption) ,link="https://nicolas.legaillart.fr/miam/p/%s.html" % item,description="<a href='https://nicolas.legaillart.fr/miam/p/%s.html'><img alt='%s' src='https://nicolas.legaillart.fr/miam/s/%s' /></a>" % (item,html.unescape(caption),item)) 
+        feed.add_item(title="%s" % html.unescape(caption) ,link="https://nicolas.legaillart.fr/miam/p/%s.html" % item,description="<a href='https://nicolas.legaillart.fr/miam/p/%s.html'><img alt='%s' src='https://nicolas.legaillart.fr/miam/s/%s' /></a>" % (item,html.unescape(caption),item),pubdate=itemdate) 
 
 
 
