@@ -45,7 +45,6 @@ for fname in dirList:
             imagelist.append(fname)
 imagelist.sort(reverse=True)
 
-print("creating feed")
 feed = feedgenerator.Atom1Feed(
      title="Une petite faim ?",
      link="https://nicolas.legaillart.fr/miam/feed",
@@ -97,6 +96,8 @@ f.close()
 
 ''' Individual pages '''
 
+nbfeed = 0
+
 for item in imagelist:
     print("creating p/%s.html page" % item)
     h = open('header.inc', 'r').read()
@@ -141,7 +142,10 @@ for item in imagelist:
 
     f.close()
 
-    feed.add_item(title="%s" % html.unescape(caption) ,link="https://nicolas.legaillart.fr/miam/p/%s.html" % item,description="<a href='https://nicolas.legaillart.fr/miam/p/%s.html'><img alt='%s' src='https://nicolas.legaillart.fr/miam/s/%s' /></a>" % (item,caption,item))  
+    nbfeed += 1
+    if nbfeed<=10:
+        feed.add_item(title="%s" % html.unescape(caption) ,link="https://nicolas.legaillart.fr/miam/p/%s.html" % item,description="<a href='https://nicolas.legaillart.fr/miam/p/%s.html'><img alt='%s' src='https://nicolas.legaillart.fr/miam/s/%s' /></a>" % (item,html.unescape(caption),item)) 
+
 
 
 ''' classic navigation pages '''
@@ -183,20 +187,11 @@ for page in range(int(nbpages)):
 
         f.write(imageline)
 
-        ''' put first page's items in the XML feed '''
-        if page == 0:
-            m = re.search('(\d{4})(\d{2})(\d{2})_(\d{2})(\d{2})(\d{2}).*',item)
-            itemdate=datetime.datetime(int(m.group(1)),
-                                            int(m.group(2)),
-                                            int(m.group(3)),
-                                            int(m.group(4)),
-                                            int(m.group(5)),
-                                            int(m.group(6)))
-
     f.write(navlinks(page))
     f.write(footer())
     f.close()
 
+print("creating atom feed")
 with open('feed.html', 'w') as fp:
      feed.write(fp, 'utf-8')
 
