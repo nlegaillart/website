@@ -1,5 +1,5 @@
 CACHE MANIFEST
-# 2014-04-26 22:14:00
+# 2024-02-04 10:09:31
 
 CACHE:
 index.html
@@ -14,7 +14,7 @@ miam.html
 /favicon.ico
 /animated_favicon1.gif
 /apple-touch-icon.png
-/js/jquery-1.12.4.min.js
+/js/jquery-3.7.1.min.js
 /js/jquery.unveil.min.js
 /js/lightbox-2.6.min.js
 /js/js.js
