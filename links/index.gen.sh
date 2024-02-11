@@ -1,7 +1,7 @@
 #!/usr/bin/env sh
 
 # /!\ copy config.sh.dist to config.sh and customize vars /!\
-. config.sh
+. ./config.sh
 
 $FETCHCMD -o $TMPFEED $FEEDSRC 2>/dev/null
 
