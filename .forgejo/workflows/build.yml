@@ -1,3 +1,4 @@
+---
 name: build
 run-name: build is launched by ${{ github.actor }}
 on: [push]
@@ -7,13 +8,12 @@ jobs:
     name: build
     steps:
       - run: echo "🎉 The job was automatically triggered by a ${{ github.event_name }} event."
-      - run: echo "🐧 This job is now running on a ${{ runner.os }} server hosted by Gitea!"
+      - run: echo "🐧 This job is now running on a ${{ runner.os }} server hosted by Forgejo!"
       - run: echo "🔎 The name of your branch is ${{ github.ref }} and your repository is ${{ github.repository }}."
       - name: Check out repository code
         uses: actions/checkout@v4
       - name: Build
-        run: | 
+        run: |
           sed s,FEEDSRC="",FEEDSRC="https://github.com/nlegaillart.atom", links/config.sh.dist > links/config.sh
           make
       - run: echo "🍏 This job's status is ${{ job.status }}."
-
