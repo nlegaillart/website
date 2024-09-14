@@ -1,3 +1,4 @@
+---
 name: build
 run-name: build is launched by ${{ github.actor }}
 on: [push]
@@ -26,4 +27,3 @@ jobs:
           links/config.sh.dist > links/config.sh
           make
       - run: echo "🍏 This job's status is ${{ job.status }}."
-
