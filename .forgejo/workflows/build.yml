@@ -12,6 +12,11 @@ jobs:
       - run: echo "🔎 The name of your branch is ${{ github.ref }} and your repository is ${{ github.repository }}."
       - name: Check out repository code
         uses: actions/checkout@v4
+      - name: Lint Markdown files
+        uses: actions/markdownlint-cli2-action@v17
+        with:
+          globs: |
+            **/*.md
       - name: Build
         run: |
           sed s,FEEDSRC="",FEEDSRC="https://github.com/nlegaillart.atom", links/config.sh.dist > links/config.sh
