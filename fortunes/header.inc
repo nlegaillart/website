@@ -19,7 +19,7 @@
 	<script src="/js/jquery.min.js"></script>
 	<script src="/js/jquery.quovolver.js"></script>
 	<script src="/js/js.js"></script>
-	<script>$(document).ready(function() {$('.quotes').quovolver();});</script>
+	<script>$(document).ready(function() {$('.quotes').quovolver( {children : 'smallquotes'} );});</script>
 
 	<!-- Open Graph meta -->
 	<meta property='og:title' content="Quelques citations que j'aime bien" />
