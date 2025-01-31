@@ -22,3 +22,13 @@ jobs:
           sed s,FEEDSRC="",FEEDSRC="https://github.com/nlegaillart.atom", links/config.sh.dist > links/config.sh
           make
       - run: echo "🍏 This job's status is ${{ job.status }}."
+  deploy:
+    needs: check
+    runs-on: ubuntu-latest
+    name: deploy (main branch only)
+    if: github.ref == 'refs/heads/main'
+    steps:
+      - run: echo "🚀 Getting fresh sources and building website."
+      - name: deploy
+        run: ssh -q -o BatchMode=yes -o StrictHostKeyChecking=accept-new -o UserKnownHostsFile=/dev/null n@web.big.internal
+      - run: echo "🍏 This job's status is ${{ job.status }}."
