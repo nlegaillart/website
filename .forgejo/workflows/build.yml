@@ -13,7 +13,7 @@ jobs:
       - name: Check out repository code
         uses: actions/checkout@v4
       - name: Lint Markdown files
-        uses: actions/markdownlint-cli2-action@v19
+        uses: actions/markdownlint-cli2-action@v20
         with:
           globs: |
             **/*.md
