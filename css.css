@@ -32,19 +32,18 @@ nav{position:absolute;text-align:center;margin-top:-50px;margin-bottom:0px;backg
 p{margin: 4px;padding: 4px;}
 .hide_mobile {display: none !important;}
 
-@media (prefers-color-scheme: dark) only screen and (max-width:620px) {
-:root { --body-bg:#191b22;--body-color: #fcfcfc;--main-inside-color: #212529;--link-color: #3ca1f8;}
+@media only screen and (max-width:980px) {
   /* For mobile phones: */
 body{overflow:visible;background-color:var(--body-bg);color:var(--body-color);width:100%;}
 nav { position:fixed; width:100%; }
 div.main{text-align:center;border:none;margin:0;background-color:var(--body-bg);behavior:none;khtml-border-radius:0;-moz-border-radius:0;-webkit-border-radius:0;-webkit-box-shadow:0 0 0 #ffffff;-moz-box-shadow:0 0 0 #ffffff;-khtml-box-shadow:0px 0px 0px #ffffff;box-shadow:0px 0px 0px #ffffff;border-radius:0;padding-bottom:20px;min-width:0;}
 div.main-inside{border:none;color:var(--body-color);background-color:var(--main-inside-color);padding:0 0 0 0; text-align:justify;max-width:100%;}
-div#col1 {float:none;width:auto;margin-top:-20px;}
-div#col2 {float:none;width:auto;margin-top:-20px;}
+div#col1 {float:none;width:auto;padding-bottom:10px}
+div#col2 {float:none;width:auto;padding-bottom:10px}
 div.matronche{position:relative; margin-left: auto; margin-right: auto;}
 aside{margin-top:0;float:none;}
 div.blah{margin-left:0;}
 div.footer{text-align:center;font-family:Helvetica,sans-serif,Verdana,Tahoma,Arial;font-size:0.9em;color:black;padding-bottom:-20px;}
-div.footer a{color:#0000FF;}
+div.footer a{color:var(--body-color);}
+h3 { margin-left: 5px;}
 }
-
