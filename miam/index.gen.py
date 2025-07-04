@@ -61,7 +61,7 @@ f.write(h)
 
 for item in imagelist:
     ''' build page structure '''
-    imageline = "=> b/%s" % item
+    imageline = "=> /miam/b/%s" % item
     caption = getcaption(item)
     if caption:
         imageline += " %s\n" % html.unescape(caption)
