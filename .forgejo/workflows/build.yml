@@ -23,12 +23,11 @@ jobs:
           make
       - run: echo "🍏 This job's status is ${{ job.status }}."
   deploy:
-    needs: check
     runs-on: ubuntu-latest
+    needs: check
     name: deploy (main branch only)
-    if: github.ref == 'refs/heads/main'
     steps:
       - run: echo "🚀 Getting fresh sources and building website."
       - name: deploy
-        run: update_website.sh
+        run: update_website.sh ${{ github.ref }}
       - run: echo "🍏 This job's status is ${{ job.status }}."
