@@ -1,0 +1,14 @@
+# CV
+
+Je suis actuellement en poste; vous pouvez néanmoins consulter mon curriculum vitae, disponible aux formats ci-dessous :
+=> /cv/nlegaillart_cv.html HTML
+=> /cv/nlegaillart_cv.pdf PDF (Adobe Acrobat)
+=> /cv/nlegaillart_cv.odt ODT (Texte OpenDocument)
+=> /cv/nlegaillart_cv.docx DOCX (Microsoft Word 2007/2010 XML)
+=> /cv/nlegaillart_cv.rtf RTF (Rich Text Format)
+=> /cv/nlegaillart_cv.json JSON (JSON Resume)
+=> /cv/nlegaillart_cv.yml YAML
+=> /cv/nlegaillart_cv.md MD (Markdown)
+=> /cv/nlegaillart_cv.txt TXT (Texte brut)
+
+Ces fichiers sont générés avec l'outil HackMyResume, et malheureusement les fichiers aux formats Microsoft y perdent leur mise en page; si vous en avez absolument besoin je peux fournir une version remise en forme sur demande.
