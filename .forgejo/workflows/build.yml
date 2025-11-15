@@ -1,5 +1,6 @@
 ---
 name: build
+enable-email-notifications: true
 run-name: build is launched by ${{ github.actor }}
 on: [push]
 jobs:
