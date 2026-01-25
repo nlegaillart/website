@@ -181,7 +181,7 @@ for page in range(int(nbpages)):
             size = 400, 400
             try:
                 im = Image.open("b/%s" % item)
-                im.thumbnail(size, Image.ANTIALIAS)
+                im.thumbnail(size, Image.LANCZOS)
                 im.save("s/%s" % item, "JPEG")
             except IOError:
                 print ("cannot create thumbnail for %s" % item)
